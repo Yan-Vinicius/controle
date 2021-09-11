@@ -27,9 +27,9 @@ public class LocalidadeService {
         return localidadeRepository.findAll();
     }
 
-    public Optional<Localidade> getById(Long id) {
+    public Optional<Localidade> getById(Long idLocalidade) {
 
-        return localidadeRepository.findById(id);
+        return localidadeRepository.findById(idLocalidade);
 
     }
 
@@ -37,9 +37,9 @@ public class LocalidadeService {
         return localidadeRepository.save(localidade);
     }
 
-    public void deleteLocalidade(Long id) {
+    public void deleteLocalidade(Long idLocalidade) {
 
-        localidadeRepository.deleteById(id);
+        localidadeRepository.deleteById(idLocalidade);
 
     }
 

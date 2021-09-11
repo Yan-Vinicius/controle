@@ -28,9 +28,9 @@ public class UsuarioService {
         return usuarioRepository.findAll();
     }
 
-    public Optional<Usuario> getById(Long id) {
+    public Optional<Usuario> getById(Long idUser) {
 
-        return usuarioRepository.findById(id);
+        return usuarioRepository.findById(idUser);
 
     }
 
@@ -38,9 +38,9 @@ public class UsuarioService {
         return usuarioRepository.save(usuario);
     }
 
-    public void deleteUsuario(Long id) {
+    public void deleteUsuario(Long idUser) {
 
-        usuarioRepository.deleteById(id);
+        usuarioRepository.deleteById(idUser);
 
     }
 }

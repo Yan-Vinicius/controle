@@ -24,9 +24,9 @@ public class CalendarioService {
         return calendarioRepository.findAll();
     }
 
-    public Optional<Calendario> getById(Long id) {
+    public Optional<Calendario> getById(Long idCalendario) {
 
-        return calendarioRepository.findById(id);
+        return calendarioRepository.findById(idCalendario);
 
     }
 
@@ -34,9 +34,9 @@ public class CalendarioService {
         return calendarioRepository.save(calendario);
     }
 
-    public void deleteCalendario(Long id) {
+    public void deleteCalendario(Long idCalendario) {
 
-        calendarioRepository.deleteById(id);
+        calendarioRepository.deleteById(idCalendario);
 
     }
 

@@ -28,9 +28,9 @@ public class TipoDataService {
         return tipoDataRepository.findAll();
     }
 
-    public Optional<TipoData> getById(Long id) {
+    public Optional<TipoData> getById(Long idTipoData) {
 
-        return tipoDataRepository.findById(id);
+        return tipoDataRepository.findById(idTipoData);
 
     }
 
@@ -38,9 +38,9 @@ public class TipoDataService {
         return tipoDataRepository.save(tipoData);
     }
 
-    public void deleteTipoData(Long id) {
+    public void deleteTipoData(Long idTipoData) {
 
-        tipoDataRepository.deleteById(id);
+        tipoDataRepository.deleteById(idTipoData);
 
     }
 

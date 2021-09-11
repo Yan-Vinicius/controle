@@ -25,9 +25,9 @@ public class EmpresaService {
         return empresaRepository.findAll();
     }
 
-    public Optional<Empresa> getById(Long id) {
+    public Optional<Empresa> getById(Long idEmpresa) {
 
-        return empresaRepository.findById(id);
+        return empresaRepository.findById(idEmpresa);
 
     }
 
@@ -35,9 +35,9 @@ public class EmpresaService {
         return empresaRepository.save(empresa);
     }
 
-    public void deleteEmpresa(Long id) {
+    public void deleteEmpresa(Long idEmpresa) {
 
-        empresaRepository.deleteById(id);
+        empresaRepository.deleteById(idEmpresa);
 
     }
 

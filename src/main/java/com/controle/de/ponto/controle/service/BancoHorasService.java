@@ -26,9 +26,9 @@ public class BancoHorasService {
         return bancoHorasRepository.findAll();
     }
 
-    public Optional<BancoHoras> getById(Long id) {
+    public Optional<BancoHoras> getById(Long idBanco) {
 
-        return bancoHorasRepository.findById(id);
+        return bancoHorasRepository.findById(idBanco);
 
     }
 
@@ -36,9 +36,9 @@ public class BancoHorasService {
         return bancoHorasRepository.save(bancoHoras);
     }
 
-    public void deleteBancoHoras(Long id) {
+    public void deleteBancoHoras(Long idBanco) {
 
-        bancoHorasRepository.deleteById(id);
+        bancoHorasRepository.deleteById(idBanco);
 
     }
 }

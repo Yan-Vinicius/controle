@@ -28,9 +28,9 @@ public class NivelAcessoService {
         return nivelAcessoRepository.findAll();
     }
 
-    public Optional<NivelAcesso> getById(Long id) {
+    public Optional<NivelAcesso> getById(Long idNivelAcesso) {
 
-        return nivelAcessoRepository.findById(id);
+        return nivelAcessoRepository.findById(idNivelAcesso);
 
     }
 
@@ -38,9 +38,9 @@ public class NivelAcessoService {
         return nivelAcessoRepository.save(nivelAcesso);
     }
 
-    public void deleteNivelAcesso(Long id) {
+    public void deleteNivelAcesso(Long idNivelAcesso) {
 
-        nivelAcessoRepository.deleteById(id);
+        nivelAcessoRepository.deleteById(idNivelAcesso);
 
     }
 

@@ -26,9 +26,9 @@ public class CategoriaUsuarioService {
         return categoriaUsuarioRepository.findAll();
     }
 
-    public Optional<CategoriaUsuario> getById(Long id) {
+    public Optional<CategoriaUsuario> getById(Long idCateUser) {
 
-        return categoriaUsuarioRepository.findById(id);
+        return categoriaUsuarioRepository.findById(idCateUser);
 
     }
 
@@ -36,9 +36,9 @@ public class CategoriaUsuarioService {
         return categoriaUsuarioRepository.save(categoriaUsuario);
     }
 
-    public void deleteCategoriaUser(Long id) {
+    public void deleteCategoriaUser(Long idCateUser) {
 
-        categoriaUsuarioRepository.deleteById(id);
+        categoriaUsuarioRepository.deleteById(idCateUser);
 
     }
 }

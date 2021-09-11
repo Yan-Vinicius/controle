@@ -26,9 +26,9 @@ public class OcorrenciaService {
         return ocorrenciaRepository.findAll();
     }
 
-    public Optional<Ocorrencia> getById(Long id) {
+    public Optional<Ocorrencia> getById(Long idOcorrencia) {
 
-        return ocorrenciaRepository.findById(id);
+        return ocorrenciaRepository.findById(idOcorrencia);
 
     }
 
@@ -36,9 +36,9 @@ public class OcorrenciaService {
         return ocorrenciaRepository.save(ocorrencia);
     }
 
-    public void deleteOcorrencia(Long id) {
+    public void deleteOcorrencia(Long idOcorrencia) {
 
-        ocorrenciaRepository.deleteById(id);
+        ocorrenciaRepository.deleteById(idOcorrencia);
 
     }
 
