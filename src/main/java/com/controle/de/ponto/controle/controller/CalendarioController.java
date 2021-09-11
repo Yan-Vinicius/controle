@@ -29,8 +29,8 @@ public class CalendarioController {
 
     }
 
-    @GetMapping("/{id}")
-    public ResponseEntity<Calendario> getCalendarioByID(@PathVariable("id") Long id) throws Exception{
+    @GetMapping("/{idCalendario}")
+    public ResponseEntity<Calendario> getCalendarioByID(@PathVariable("idCalendario") Long id) throws Exception{
 
         return ResponseEntity.ok(calendarioService.getById(id).orElseThrow(() -> new NoSuchElementException("Não encontrado")));
 
@@ -42,8 +42,8 @@ public class CalendarioController {
         return calendarioService.updateCalendario(calendario);
     }
 
-    @DeleteMapping("/{id}")
-    public ResponseEntity<Calendario> deleteByID(@PathVariable("id") Long id) throws Exception{
+    @DeleteMapping("/{idCalendario}")
+    public ResponseEntity<Calendario> deleteByID(@PathVariable("idCalendario") Long id) throws Exception{
 
         try {
 
