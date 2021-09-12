@@ -27,9 +27,9 @@ public class MovimentacaoService {
         return movimentacaoRepository.findAll();
     }
 
-    public Optional<Movimentacao> getById(Long idMovimentacao) {
+    public Optional<Movimentacao> getById(Long idMovimento) {
 
-        return movimentacaoRepository.findById(idMovimentacao);
+        return movimentacaoRepository.findById(idMovimento);
 
     }
 
@@ -37,9 +37,9 @@ public class MovimentacaoService {
         return movimentacaoRepository.save(movimentacao);
     }
 
-    public void deleteMovimentacao(Long idMovimentacao) {
+    public void deleteMovimentacao(Long idMovimento) {
 
-        movimentacaoRepository.deleteById(idMovimentacao);
+        movimentacaoRepository.deleteById(idMovimento);
 
     }
 
